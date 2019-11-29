@@ -35,8 +35,16 @@ if (isset($_POST['nama_lengkap']) && $_POST['nama_lengkap']) {
     } else if(empty($email)){
         echo "<script>alert('Email belum diisi')</script>";
         echo "<meta http-equiv='refresh' content='1 url=formregistrasi.php'>";
-    }
-    else{
+    }else if(!empty($email)){
+
+        // cek apakah email sudah terdaftar
+        $query = "SELECT email FROM user WHERE email='$email'";
+        $find = $koneksi->query($query);
+    
+        if ($find && mysqli_num_rows($find) > 0) {
+            echo "<script>alert('User Telah terdaftar, silakan login'); window.location.href = './indexlogin.php';</script>";
+        }
+    }else{
         // encryption dengan md5
         // SQL Insert
         $sql = "INSERT INTO user (nama_lengkap, nama_institusi, nohp,level, email, pass) VALUES ('$nama_lengkap','$nama_institusi', '   $nohp', '$level', '$email', '$password')";
