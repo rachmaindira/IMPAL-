@@ -15,6 +15,27 @@ if (isset($_POST['nama_lengkap']) && $_POST['nama_lengkap']) {
     if ($password != $repassword) { // jika tidak sama
         echo "<script>alert('".$dbconnect->error."gagal'); window.location.href = './formregistrasi.php';</script>";   
     }
+    else if(empty($nama_lengkap)){
+        echo "<script>alert('Nama Lengkap belum diisi')</script>";
+        echo "<meta http-equiv='refresh' content='1 url=formregistrasi.php'>";
+    }
+    else if(empty($nama_institusi)){
+        echo "<script>alert('Nama Institusi belum diisi')</script>";
+        echo "<meta http-equiv='refresh' content='1 url=formregistrasi.php'>";
+    }
+    else if(empty($nohp)){
+        echo "<script>alert('Nomor HP belum diisi')</script>";
+        echo "<meta http-equiv='refresh' content='1 url=formregistrasi.php'>";
+    } else if(empty($level)){
+        echo "<script>alert('Level belum diisi')</script>";
+        echo "<meta http-equiv='refresh' content='1 url=formregistrasi.php'>";
+    } else if(empty($password)){
+        echo "<script>alert('Password belum diisi')</script>";
+        echo "<meta http-equiv='refresh' content='1 url=formregistrasi.php'>";
+    } else if(empty($email)){
+        echo "<script>alert('Email belum diisi')</script>";
+        echo "<meta http-equiv='refresh' content='1 url=formregistrasi.php'>";
+    }
     else{
         // encryption dengan md5
         // SQL Insert
@@ -23,10 +44,8 @@ if (isset($_POST['nama_lengkap']) && $_POST['nama_lengkap']) {
         if (! $insert) {
             echo "<script>alert('".$dbconnect->error."gagal'); window.location.href = './formregistrasi.php';</script>";
         } else {
-        echo "<script>alert('Insert Data Berhasil'); window.location.href = './indexlogin.php';</script>";
+            echo "<script>alert('Insert Data Berhasil'); window.location.href = './indexlogin.php';</script>";
         }
     }
-    // jika gagal
-    
 }
 ?>
