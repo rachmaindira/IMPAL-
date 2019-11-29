@@ -114,9 +114,9 @@
         <div class="container">
           <div class="row align-items-center justify-content-center text-center">
             <div class="col-md-5 mt-5 pt-5">
-              <h1 class="mb-3">HALAMAN PEMINJAMAN BUKU</h1>
-              <p>Halaman Untuk Meminjam Buku</p>
-              <p><a href="inputpeminjaman.php" class="btn btn-primary">Input Peminjam Buku</a></p>
+              <h1 class="mb-3">HALAMAN PENGEMBALIAN BUKU</h1>
+              <p>Halaman Untuk Pengembalian Buku</p>
+              <p><a href="inputbuku.php" class="btn btn-primary">Input Pengembalian Buku</a></p>
             </div>
           </div>
         </div>
@@ -136,16 +136,18 @@
                              </div>
                                 <?php
                                   include "koneksi.php";
-                                  $query = mysqli_query($koneksi,"SELECT * FROM peminjaman ;");
+                                  $query = mysqli_query($koneksi,"SELECT * FROM buku ;");
                                 ?>
                                 <table class="table table-bordered table-striped">
                                     <thead>
-                                      <th>Nama Lengkap</th>
-                                      <th>Nim</th>
-                                      <th>Judul Buku</th> 
-                                      <th>Tanggal Peminjaman</th>
-                                      <th>Status</th>
-                                      <th>Action</th>
+                                      <th>Kode Buku</th>
+                                      <th>ISBN</th>
+                                      <th>Judul Buku</th>
+                                      <th>Tahun Terbit</th>
+                                      <th>Pengarang</th>
+                                      <th>Penerbit</th>
+                                      <th>Jenis Buku</th>
+                                      <th>Keterangan</th>
                                     </thead>
 
                                     <tbody>
@@ -158,13 +160,16 @@
                                         ?>
                                         <tbody>
                                         <tr>
-                                            <td><?php echo $data["nama_lengkap"];?></td>
-                                            <td><?php echo $data["nim"];?></td>
+                                            <td><?php echo $data["kode_buku"];?></td>
+                                            <td><?php echo $data["isbn"];?></td>
                                             <td><?php echo $data["judul_buku"];?></td>
-                                            <td><?php echo $data["tanggal_peminjaman"];?></td>
-                                            <td><?php echo $data["status"];?></td>
+                                            <td><?php echo $data["tahun_terbit"];?></td>
+                                            <td><?php echo $data["pengarang"];?></td>
+                                            <td><?php echo $data["penerbit"];?></td>
+                                            <td><?php echo $data["jenis_buku"];?></td>
                                             <td>
                                               <a href="cekedit.php?kode_buku=<?php echo $data['kode_buku'];?>" class="btn btn-info btn-sm update-record" data-package_id="<?php echo $row->package_id;?>" data-package_name="<?php echo $row->package_name;?>">Edit</a>
+                                              <a href="cekdelete.php?kode_buku=<?php echo $data['kode_buku'];?>" onclick="return confirm('Yakin mau di hapus?');"class="btn btn-danger btn-sm delete-record" data-package_id="<?php echo $row->package_id;?>">Delete</a>
                                             </td>
                                         </tr>
                                         </tbody>

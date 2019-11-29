@@ -59,14 +59,14 @@
 
               
 
-              <<nav class="site-navigation text-left mr-auto d-none d-lg-block" role="navigation">
+              <nav class="site-navigation text-left mr-auto d-none d-lg-block" role="navigation">
                 <ul class="site-menu main-menu js-clone-nav mr-auto ">
-                  <li class="active"><a href="indexslogin.php" class="nav-link">Home</a></li>
-                  <li><a href="databuku_slogin.php" class="nav-link">Data Buku</a></li>
-                  <li><a href="peminjamanbuku.php" class="nav-link">Peminjaman Buku</a></li>
-                  <li><a href="pengembalianbuku.php" class="nav-link">Pengembalian Buku</a></li>
-                  <li><a href="about_slogin.php" class="nav-link">About Us</a></li>
-                  <li><a href="logout.php" class="nav-link">LogOut</a></li>
+                  <li class="active"><a href="index_mhs.html" class="nav-link">Home</a></li>
+                  <li><a href="katalog_mhs.php" class="nav-link">Katalog Buku</a></li>
+                  <li><a href="datapeminjaman_mhs.php" class="nav-link">Riwayat Peminjaman Buku</a></li>
+                  <li><a href="about_mhs.php" class="nav-link">About Us</a></li>
+                  <li><a href="galeri_mhs.php" class="nav-link">Galerry</a></li>
+                  <li><a href="logout.php" class="nav-link">Log Out</a></li>
                 </ul>
               </nav>
 
@@ -90,8 +90,7 @@
           <div class="row align-items-center justify-content-center text-center">
             <div class="col-md-5 mt-5 pt-5">
               <h1 class="mb-3">About Us</h1>
-              <p>WEBPUS merupakan sistem pelayanan perpustakaan berbasis website yang digunakan untuk mengelola sistem layanan perpustakaan seperti peminjaman buku, pengembalian buku, menambah, menghapus, dan mengubah stok buku, serta perhitungan denda untuk peminjam yang terlambat mengembalikan buku, serta buku yang dipinjam hilang atau rusak. 
-</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta veritatis in tenetur doloremque, maiores doloribus officia iste. Dolores.</p>
               <p><a href="#" class="btn btn-primary">Learn More</a></p>
             </div>
           </div>

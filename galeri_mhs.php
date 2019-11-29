@@ -61,12 +61,12 @@
 
               <nav class="site-navigation text-left mr-auto d-none d-lg-block" role="navigation">
                 <ul class="site-menu main-menu js-clone-nav mr-auto ">
-                  <li class="active"><a href="index.php" class="nav-link">Home</a></li>
-                  <li><a href="katalog.php" class="nav-link">Katalog Buku</a></li>
-                  <li><a href="about.php" class="nav-link">About Us</a></li>
-                  <li><a href="galeri.php" class="nav-link">Galerry</a></li>
-                  <li><a href="indexlogin.php" class="nav-link">Login</a></li>
-                  <li><a href="formregistrasi.php" class="nav-link">Sign Up</a></li>
+                  <li class="active"><a href="index_mhs.html" class="nav-link">Home</a></li>
+                  <li><a href="katalog_mhs.php" class="nav-link">Katalog Buku</a></li>
+                  <li><a href="datapeminjaman_mhs.php" class="nav-link">Riwayat Peminjaman Buku</a></li>
+                  <li><a href="about_mhs.php" class="nav-link">About Us</a></li>
+                  <li><a href="galeri_mhs.php" class="nav-link">Galerry</a></li>
+                  <li><a href="logout.php" class="nav-link">Log Out</a></li>
                 </ul>
               </nav>
 
@@ -89,7 +89,7 @@
         <div class="container">
           <div class="row align-items-center justify-content-center text-center">
             <div class="col-md-5 mt-5 pt-5">
-              <h1 class="mb-3">Blog/Articles</h1>
+              <h1 class="mb-3">Galerry</h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta veritatis in tenetur doloremque, maiores doloribus officia iste. Dolores.</p>
               <p><a href="#" class="btn btn-primary">Learn More</a></p>
             </div>

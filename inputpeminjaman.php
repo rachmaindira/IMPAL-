@@ -11,38 +11,30 @@
   <div class="card">
     <div class="card-header bg-primary text-white">Form Input Buku</div>
     <div class="card-body" >
-      <form action="send_input_buku.php" method="POST">
+      <form action="send_input_peminjaman.php" method="POST">
         <div class="form-group">
-          <label for="kode_buku">Kode Buku</label>
-          <input type="text" class="form-control" name="kode_buku">
+          <label for="kode_buku">Nama Lengkap</label>
+          <input type="text" class="form-control" name="nama_lengkap">
         </div>
         <div class="form-group">
-          <label for="isbn">ISBN</label>
-          <input type="text" class="form-control" name="isbn">
+          <label for="isbn">NIM</label>
+          <input type="text" class="form-control" name="nim">
         </div>
         <div class="form-group">
           <label for="judul_buku">Judul Buku</label>
           <input type="text" class="form-control" name="judul_buku">
         </div>
         <div class="form-group">
-          <label for="tahun_terbit">Tahun Terbit</label>
-          <input type="text" class="form-control" name="tahun_terbit">
+          <label for="tahun_terbit">Tanggal Peminjaman</label>
+          <input type="text" class="form-control" name="tanggal_peminjaman">
         </div>
         <div class="form-group">
-          <label for="pengarang">Pengarang</label>
-          <input type="text" class="form-control" name="pengarang">
-        </div>
-        <div class="form-group">
-          <label for="penerbit">Penerbit</label>
-          <input type="text" class="form-control" name="penerbit">
-        </div>
-        <div class="form-group">
-          <label for="jenis_buku">Jenis Buku</label>
-          <input type="text" class="form-control" name="jenis_buku">
+          <label for="pengarang">Status</label>
+          <input type="text" class="form-control" name="status">
         </div>
         <button type="submit" class="btn btn-primary ">Input</button>
         <div class="text-center p-t-136">
-            <a class="txt2" href="databuku_slogin.php">
+            <a class="txt2" href="peminjamanbuku.php">
               Back Data Buku
               <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
             </a>

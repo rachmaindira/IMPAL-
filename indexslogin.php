@@ -2,7 +2,7 @@
 <html lang="en">
 
   <head>
-    <title>WEPUS &mdash; Website Perpustakaan</title>
+    <title>Webpus.com</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -53,7 +53,7 @@
         <div class="container mb-3">
           <div class="d-flex align-items-center">
             <div class="site-logo mr-auto">
-              <a href="index.html">WEPUS<span class="text-primary">.</span></a>
+              <a href="index.html">WEBPUS<span class="text-primary">.</span></a>
             </div>
           </div>
         </div>
@@ -96,7 +96,7 @@
           <div class="row align-items-center ">
             <div class="col-md-5 mt-5 pt-5">
               <h1 class="mb-3">Website Perpustakaan</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta veritatis in tenetur doloremque, maiores doloribus officia iste. Dolores.</p>
+              <p>Website Perpustakaan Dapat Meminjam Berbagai Buku</p>
               <p class="mt-5"><a href="#" class="btn btn-primary">About Us</a></p>
             </div>
             <div class="col-md-6 ml-auto">

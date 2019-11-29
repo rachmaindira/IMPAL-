@@ -86,12 +86,12 @@
 
               <nav class="site-navigation text-left mr-auto d-none d-lg-block" role="navigation">
                 <ul class="site-menu main-menu js-clone-nav mr-auto ">
-                  <li class="active"><a href="indexslogin.php" class="nav-link">Home</a></li>
-                  <li><a href="databuku_slogin.php" class="nav-link">Data Buku</a></li>
-                  <li><a href="peminjamanbuku.php" class="nav-link">Peminjaman Buku</a></li>
-                  <li><a href="pengembalianbuku.php" class="nav-link">Pengembalian Buku</a></li>
-                  <li><a href="about_slogin.php" class="nav-link">About Us</a></li>
-                  <li><a href="logout.php" class="nav-link">LogOut</a></li>
+                  <li class="active"><a href="index_mhs.html" class="nav-link">Home</a></li>
+                  <li><a href="katalog_mhs.php" class="nav-link">Katalog Buku</a></li>
+                  <li><a href="datapeminjaman_mhs.php" class="nav-link">Riwayat Peminjaman Buku</a></li>
+                  <li><a href="about_mhs.php" class="nav-link">About Us</a></li>
+                  <li><a href="galeri_mhs.php" class="nav-link">Galerry</a></li>
+                  <li><a href="logout.php" class="nav-link">Log Out</a></li>
                 </ul>
               </nav>
               
@@ -114,9 +114,8 @@
         <div class="container">
           <div class="row align-items-center justify-content-center text-center">
             <div class="col-md-5 mt-5 pt-5">
-              <h1 class="mb-3">HALAMAN PEMINJAMAN BUKU</h1>
-              <p>Halaman Untuk Meminjam Buku</p>
-              <p><a href="inputpeminjaman.php" class="btn btn-primary">Input Peminjam Buku</a></p>
+              <h1 class="mb-3">HALAMAN DATA BUKU</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta veritatis in tenetur doloremque, maiores doloribus officia iste. Dolores.</p>
             </div>
           </div>
         </div>
@@ -128,7 +127,7 @@
                 <div class="row ">
                     <div class="col-xs-24 col-sm-12 col-md-24" style="text-align: center;">
                         <div class="header-text">
-                        <h2 > Data Peminjam Buku </h4>
+                        <h2 > Riwayat Peminjaman </h4>
                             <form method="GET" action="">
                               <input class="search" type="text" placeholder="Cari..." required> 
                               <input class="button" type="submit" value="Cari">   
@@ -145,7 +144,6 @@
                                       <th>Judul Buku</th> 
                                       <th>Tanggal Peminjaman</th>
                                       <th>Status</th>
-                                      <th>Action</th>
                                     </thead>
 
                                     <tbody>
@@ -163,9 +161,6 @@
                                             <td><?php echo $data["judul_buku"];?></td>
                                             <td><?php echo $data["tanggal_peminjaman"];?></td>
                                             <td><?php echo $data["status"];?></td>
-                                            <td>
-                                              <a href="cekedit.php?kode_buku=<?php echo $data['kode_buku'];?>" class="btn btn-info btn-sm update-record" data-package_id="<?php echo $row->package_id;?>" data-package_name="<?php echo $row->package_name;?>">Edit</a>
-                                            </td>
                                         </tr>
                                         </tbody>
                                         <?php $no++; } ?>

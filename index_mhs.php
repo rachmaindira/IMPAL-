@@ -64,12 +64,12 @@
 
               <nav class="site-navigation text-left mr-auto d-none d-lg-block" role="navigation">
                 <ul class="site-menu main-menu js-clone-nav mr-auto ">
-                  <li class="active"><a href="index.html" class="nav-link">Home</a></li>
-                  <li><a href="katalog.php" class="nav-link">Katalog Buku</a></li>
-                  <li><a href="about.php" class="nav-link">About Us</a></li>
-                  <li><a href="galeri.php" class="nav-link">Galerry</a></li>
-                  <li><a href="indexlogin.php" class="nav-link">Login</a></li>
-                  <li><a href="formregistrasi.php" class="nav-link">Sign Up</a></li>
+                  <li class="active"><a href="index_mhs.php" class="nav-link">Home</a></li>
+                  <li><a href="katalog_mhs.php" class="nav-link">Katalog Buku</a></li>
+                  <li><a href="datapeminjaman_mhs.php" class="nav-link">Riwayat Peminjaman Buku</a></li>
+                  <li><a href="about_mhs.php" class="nav-link">About Us</a></li>
+                  <li><a href="galeri_mhs.php" class="nav-link">Galerry</a></li>
+                  <li><a href="logout.php" class="nav-link">Log Out</a></li>
                 </ul>
               </nav>
               
@@ -87,8 +87,8 @@
         <div class="container">
           <div class="row align-items-center ">
             <div class="col-md-5 mt-5 pt-5">
-              <h1 class="mb-3">WEBPUS</h1>
-              <p>Website Perpustakaan</p>
+              <h1 class="mb-3">Website Perpustakaan</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta veritatis in tenetur doloremque, maiores doloribus officia iste. Dolores.</p>
               <p class="mt-5"><a href="#" class="btn btn-primary">About Us</a></p>
             </div>
             <div class="col-md-6 ml-auto">

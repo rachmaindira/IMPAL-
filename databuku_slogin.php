@@ -2,7 +2,7 @@
 <html lang="en">
 
   <head>
-    <title>WEPUS &mdash; Website Perpustakaan</title>
+    <title>Webpus.com</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -71,7 +71,7 @@
         <div class="container mb-3">
           <div class="d-flex align-items-center">
             <div class="site-logo mr-auto">
-              <a href="index.html">WEPUS<span class="text-primary">.</span></a>
+              <a href="index.html">WEBPUS<span class="text-primary">.</span></a>
             </div>
             <div class="site-quick-contact d-none d-lg-flex ml-auto ">
               
@@ -114,8 +114,8 @@
         <div class="container">
           <div class="row align-items-center justify-content-center text-center">
             <div class="col-md-5 mt-5 pt-5">
-              <h1 class="mb-3">Katalog Buku</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta veritatis in tenetur doloremque, maiores doloribus officia iste. Dolores.</p>
+              <h1 class="mb-3">HALAMAN DATA BUKU</h1>
+              <p>Halaman Untuk Menginput Data Buku Baru</p>
               <p><a href="inputbuku.php" class="btn btn-primary">Input Data Buku</a></p>
             </div>
           </div>
@@ -129,9 +129,9 @@
                     <div class="col-xs-24 col-sm-12 col-md-24" style="text-align: center;">
                         <div class="header-text">
                         <h2 > Data Buku </h4>
-                            <form>
+                            <form method="GET" action="">
                               <input class="search" type="text" placeholder="Cari..." required> 
-                              <input class="button" type="button" value="Cari">   
+                              <input class="button" type="submit" value="Cari">   
                             </form>
                              </div>
                                 <?php
@@ -167,9 +167,10 @@
                                             <td><?php echo $data["pengarang"];?></td>
                                             <td><?php echo $data["penerbit"];?></td>
                                             <td><?php echo $data["jenis_buku"];?></td>
-
-                                            <td><a href='belom bener' style="color : black;">Edit</a>
-                                            <a href="cekdelete.php?kode_buku=<?php echo $data['kode_buku'];?>" onclick="return confirm('Yakin mau di hapus?');" style="color : black;">|| Delete ||</a></td>
+                                            <td>
+                                              <a href="cekedit.php?kode_buku=<?php echo $data['kode_buku'];?>" class="btn btn-info btn-sm update-record" data-package_id="<?php echo $row->package_id;?>" data-package_name="<?php echo $row->package_name;?>">Edit</a>
+                                              <a href="send_delete_buku.php?kode_buku=<?php echo $data['kode_buku'];?>" onclick="return confirm('Yakin mau di hapus?');"class="btn btn-danger btn-sm delete-record" data-package_id="<?php echo $row->package_id;?>">Delete</a>
+                                            </td>
                                         </tr>
                                         </tbody>
                                         <?php $no++; } ?>

@@ -2,7 +2,7 @@
 <html lang="en">
 
   <head>
-    <title>Noxen &mdash; Website Template by Colorlib</title>
+    <title>Webpus.com</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -44,7 +44,7 @@
         <div class="container mb-3">
           <div class="d-flex align-items-center">
             <div class="site-logo mr-auto">
-              <a href="index.php">WEPUS<span class="text-primary">.</span></a>
+              <a href="index.php">WEBPUS<span class="text-primary">.</span></a>
             </div>
             <div class="site-quick-contact d-none d-lg-flex ml-auto ">
               
@@ -61,7 +61,7 @@
 
               <nav class="site-navigation text-left mr-auto d-none d-lg-block" role="navigation">
                 <ul class="site-menu main-menu js-clone-nav mr-auto ">
-                  <li class="active"><a href="index.html" class="nav-link">Home</a></li>
+                  <li class="active"><a href="index.php" class="nav-link">Home</a></li>
                   <li><a href="katalog.php" class="nav-link">Katalog Buku</a></li>
                   <li><a href="about.php" class="nav-link">About Us</a></li>
                   <li><a href="galeri.php" class="nav-link">Galerry</a></li>

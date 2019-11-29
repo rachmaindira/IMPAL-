@@ -1,7 +1,17 @@
+<?php
+session_start(); // Start session nya
+// Kita cek apakah user sudah login atau belum
+// Cek nya dengan cara cek apakah terdapat session username atau tidak
+if(isset($_SESSION['username'])){ // Jika session username ada berarti dia sudah login
+  header("location: indexslogin.php"); // Kita Redirect ke halaman welcome.php
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Login V1</title>
+	<title>Login Webpus</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -41,7 +51,7 @@
 
 				<form class="login100-form validate-form" action="ceklogin.php" method="POST">
 					<span class="login100-form-title">
-						Member Login WEPUS
+						Member Login WEBPUS
 					</span>
 
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
