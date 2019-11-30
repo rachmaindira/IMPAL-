@@ -25,11 +25,15 @@
           <input type="text" class="form-control" name="judul_buku">
         </div>
         <div class="form-group">
-          <label for="tahun_terbit">Tanggal Peminjaman</label>
+          <label for="tanggal_peminjaman">Tanggal Peminjaman</label>
           <input type="text" class="form-control" name="tanggal_peminjaman">
         </div>
         <div class="form-group">
-          <label for="pengarang">Status</label>
+          <label for="status">Status</label>
+          <input type="text" class="form-control" name="status">
+        </div>
+        <div class="form-group">
+          <label for="tanggal_pengembalian">Tanggal Pengembalian</label>
           <input type="text" class="form-control" name="status">
         </div>
         <button type="submit" class="btn btn-primary ">Input</button>

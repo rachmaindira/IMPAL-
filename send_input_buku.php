@@ -21,4 +21,4 @@ if (isset($_POST['kode_buku']) && $_POST['kode_buku']) {
         echo "<script>alert('Insert Data Berhasil'); window.location.href = './databuku_slogin.php';</script>";
         }    
     }
-?>
+?> 

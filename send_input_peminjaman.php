@@ -8,10 +8,11 @@ if (isset($_POST['nama_lengkap']) && $_POST['nama_lengkap']) {
     $judul_buku = $_POST['judul_buku'];
     $tanggal_peminjaman = $_POST['tanggal_peminjaman'];
     $status = $_POST['status'];
+    $tanggal_kembali = $_POST['tanggal_kembali'];
     
         // encryption dengan md5
         // SQL Insert
-        $sql = "INSERT INTO peminjaman (nama_lengkap, nim, judul_buku,tanggal_peminjaman, status) VALUES ('$nama_lengkap','$nim', '$judul_buku', '$tanggal_peminjaman', '$status')";
+        $sql = "INSERT INTO peminjaman (nama_lengkap, nim, judul_buku,tanggal_peminjaman, status, tanggal_kembali) VALUES ('$nama_lengkap','$nim', '$judul_buku', '$tanggal_peminjaman', '$status', '$tanggal_kembali')";
         $insert = $koneksi->query($sql);
         if (! $insert) {
             echo "<script>alert('".$dbconnect->error."gagal'); window.location.href = './inputpeminjaman.php';</script>";

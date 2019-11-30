@@ -14,7 +14,7 @@
       <form action="send_input_buku.php" method="POST">
         <div class="form-group">
           <label for="kode_buku">Kode Buku</label>
-          <input type="text" class="form-control" name="kode_buku">
+          <input type="text" class="form-control" name="kode_buku"> 
         </div>
         <div class="form-group">
           <label for="isbn">ISBN</label>

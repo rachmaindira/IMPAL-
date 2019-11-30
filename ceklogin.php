@@ -38,12 +38,13 @@ if($cek > 0){
 		header("location:index_mhs.php");
 
 	}else{
+
 		// alihkan ke halaman login kembali
-// 		echo "<script>alert('we couldn't find an acccount with the username you entered')</script>";
+		echo "<script>alert('we couldn't find an account with the username you entered')</script>";
 		header("location:indexlogin.php?pesan=gagal");
 	}	
 }else{
-// 	echo "<script>alert('we couldn't find an acccount with the username you entered')</script>";
+	echo "<script>alert('we couldn't find an account with the username you entered')</script>";
 	header("location:indexlogin.php?pesan=gagal");
 }
 
