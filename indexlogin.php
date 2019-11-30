@@ -36,7 +36,7 @@ if(isset($_SESSION['username'])){ // Jika session username ada berarti dia sudah
     include 'koneksi.php';
     if(isset($_GET['pesan'])){
         if($_GET['pesan']=="gagal"){
-            echo "<div class='alert'>Email dan Password tidak sesuai !</div>";
+            echo "<div class='alert'>we couldn't find an account with the username you entered</div>";
         }
     }
     ?>
